@@ -8408,9 +8408,9 @@
     "restore": {
       "projectUniqueName": "GitCheckinTestCode",
       "projectName": "GitCheckinTestCode",
-      "projectPath": "C:\\TestRepo\\UipathCICD\\GitCheckinTestCode\\.local",
+      "projectPath": "C:\\TestRepo\\GitCheckinTestCode\\.local",
       "packagesPath": "C:\\Users\\sshukla001\\.nuget\\packages\\",
-      "outputPath": "C:\\TestRepo\\UipathCICD\\GitCheckinTestCode\\.local",
+      "outputPath": "C:\\TestRepo\\GitCheckinTestCode\\.local",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
