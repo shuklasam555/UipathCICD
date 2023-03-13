@@ -9,12 +9,12 @@
   env:
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
-    PROJECT_FOLDER: ${{ github.action_path }}
+    PROJECT_FOLDER: https://github.com/shuklasam555/UipathCICD
     ORCH_URL: https://cloud.uipath.com/rxomafmgxr/NonProd
-    ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
-    ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}
-    ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
-    ORCH_ACC_NAME: ${{ secrets.UIPATHACCOUNTNAME }}
+    ORCH_TENANT: ${{ secrets.ORCHESTRATOR_TENANT }}
+    ORCH_CLIENT_ID: ${{ secrets.ORCH_CLIENTID }}
+    ORCH_USER_KEY: ${{ secrets.USERKEY }}
+    ORCH_ACC_NAME: ${{ secrets.ACCOUNT_NAME }}
 
   jobs:
     print-details:
@@ -67,5 +67,5 @@
             name: Artifacts
         - name: Publish Nuget Package to DEV
           shell: pwsh
-          run: ${{ github.workspace }}\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey ${{env.ORCH_USER_KEY}} -account_name ${{env.ORCH_ACC_NAME}}
+          run: ${{ github.workspace }}\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\package ${{env.ORCHESTRATOR_URL}} ${{env.ORCHESTRATOR_TENANT}} -UserKey ${{env.USERKEY}} -account_name ${{env.ACCOUNT_NAME}}
 
