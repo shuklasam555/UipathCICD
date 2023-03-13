@@ -10,7 +10,7 @@
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
     PROJECT_FOLDER: ${{ github.action_path }}
-    ORCH_URL: https://cloud.uipath.com/RPABOTSWORLD/DEV
+    ORCH_URL: https://cloud.uipath.com/rxomafmgxr/NonProd
     ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
     ORCH_CLIENT_ID: ${{ secrets.UIPATHCLIENTID }}
     ORCH_USER_KEY: ${{ secrets.UIPATHUSERKEY }}
