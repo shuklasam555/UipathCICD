@@ -3,12 +3,12 @@
   on:
     push:
       branches:
-        - develop
+        - UipathCICD
 
   # Here the environment variable is declared in workflow level
   env:
     # Replace with your Orchestrator Values
-    PROJECT_NAME: uipath.github.action
+    PROJECT_NAME: GitCheckinTestCode
     PROJECT_FOLDER: ${{ github.action_path }}
     ORCH_URL: https://cloud.uipath.com/RPABOTSWORLD/DEV
     ORCH_TENANT: ${{ secrets.UIPATHTENANTNAME }}
