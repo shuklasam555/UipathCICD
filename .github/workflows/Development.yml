@@ -3,7 +3,8 @@
   on:
     push:
       branches:
-        - UipathCICD
+        - main
+        - UipathCICD/GitCheckinTestCode
 
   # Here the environment variable is declared in workflow level
   env:
