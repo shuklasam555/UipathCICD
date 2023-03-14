@@ -62,14 +62,14 @@ Param (
 
     #Required
     
-	[string] $project_path = "", # Required. Path to a project.json file or a folder containing project.json files.
-    [string] $destination_folder = "", #Required. Destination folder.
-	[string] $libraryOrchestratorUrl = "", #Required. The URL of the Orchestrator instance.
-	[string] $libraryOrchestratorTenant = "", #(Optional, useful only for libraries) The Orchestrator tenant.
+	[string] $project_path = "C:\TestRepo\UipathCICD\GitCheckinTestCode\project.json", # Required. Path to a project.json file or a folder containing project.json files.
+    [string] $destination_folder = "C:\TestRepo\UipathCICD", #Required. Destination folder.
+	[string] $libraryOrchestratorUrl = "https://cloud.uipath.com/rxomafmgxr/NonProd", #Required. The URL of the Orchestrator instance.
+	[string] $libraryOrchestratorTenant = "NonProd", #(Optional, useful only for libraries) The Orchestrator tenant.
 
     #cloud - Required
-    [string] $libraryOrchestratorAccountName = "", #(Optional, useful only for libraries) The Orchestrator URL.
-	[string] $libraryOrchestratorUserKey = "", #Required. The Orchestrator OAuth2 refresh token used for authentication. Must be used together with the account name and client id.
+    [string] $libraryOrchestratorAccountName = "jagdish.shripati@rxo.com", #(Optional, useful only for libraries) The Orchestrator URL.
+	[string] $libraryOrchestratorUserKey = "w_ta_YvuB6PvwTKWFuhx2-r-m9MQldVh2nlKF4X0OJdo5", #Required. The Orchestrator OAuth2 refresh token used for authentication. Must be used together with the account name and client id.
     
     #On prem - Required
     [string] $libraryOrchestratorUsername = "", #Required. The Orchestrator username used for authentication. Must be used together with the password.
