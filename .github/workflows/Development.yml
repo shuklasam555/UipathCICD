@@ -50,7 +50,7 @@
           uses: actions/checkout@v2
         - name: Build Nuget Package
           shell: pwsh
-          run: https:\\github.com\shuklasam555\UipathCICD\tree\main\GitCheckinTestCode\scripts\UiPathPack.ps1 https:\\github.com\shuklasam555\UipathCICD\tree\main\GitCheckinTestCode\project.json -destination_folder https:\\github.com\shuklasam555\UipathCICD\tree\main\package
+          run: shuklasam555\scripts\UiPathPack.ps1 shuklasam555\project.json -destination_folder shuklasam555\package
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
@@ -68,5 +68,5 @@
             name: Artifacts
         - name: Publish Nuget Package to DEV
           shell: pwsh
-          run: https:\\github.com\shuklasam555\UipathCICD\tree\main\GitCheckinTestCode\scripts\UiPathDeploy.ps1 https:\\github.com\shuklasam555\UipathCICD\tree\main\package https:\\cloud.uipath.com\rxomafmgxr\NonProd NonProd -UserKey w_ta_YvuB6PvwTKWFuhx2-r-m9MQldVh2nlKF4X0OJdo5 -account_name jagdish.shripati@rxo.com
+          run: shuklasam555\scripts\UiPathDeploy.ps1 shuklasam555\package https:\\cloud.uipath.com\rxomafmgxr\NonProd NonProd -UserKey w_ta_YvuB6PvwTKWFuhx2-r-m9MQldVh2nlKF4X0OJdo5 -account_name jagdish.shripati@rxo.com
 
