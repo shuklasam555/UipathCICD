@@ -38,7 +38,6 @@
         - name: Runner workspace path
           run: |
             echo "Cleaning up previous run"
-            echo "${{ github.workspace }}\scripts\"
             rm -rf "${{ github.workspace }}"
 
     build-uipath-nuget-package:
