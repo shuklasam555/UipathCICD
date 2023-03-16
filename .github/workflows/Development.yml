@@ -4,17 +4,16 @@
     push:
       branches:
         - main
-
   # Here the environment variable is declared in workflow level
   env:
     # Replace with your Orchestrator Values
-    PROJECT_NAME: uipath.github.action
-    PROJECT_FOLDER: ${{ github.action_path }}
+    PROJECT_NAME: GitCheckinTestCode
+    PROJECT_FOLDER: C:\UipathCICD\GitCheckinTestCode
     ORCH_URL: https://cloud.uipath.com/rxomafmgxr/NonProd
-    ORCH_TENANT: ${{ secrets.ORCHESTRATOR_TENANT }}
-    ORCH_CLIENT_ID: ${{ secrets.ORCH_CLIENTID }}
-    ORCH_USER_KEY: ${{ secrets.USERKEY }}
-    ORCH_ACC_NAME: ${{ secrets.ACCOUNT_NAME }}
+    ORCH_TENANT: NonProd
+    ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
+    ORCH_USER_KEY: w_ta_YvuB6PvwTKWFuhx2-r-m9MQldVh2nlKF4X0OJdo5
+    ORCH_ACC_NAME: jagdish.shripati@rxo.com
 
   jobs:
     print-details:
