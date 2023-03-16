@@ -37,7 +37,7 @@
           run: |
             echo "Cleaning up previous run"
             echo "uipath.github.action"
-            echo "github.action_path"
+            echo "${{ github.repository}}\GitCheckinTestCode\scripts\"
             rm -rf "${{ github.workspace }}"
 
     build-uipath-nuget-package:
@@ -50,7 +50,7 @@
           uses: actions/checkout@v2
         - name: Build Nuget Package
           shell: pwsh
-          run: ${{ github.repository}}\${{ github.workflow }}\scripts\UiPathPack.ps1 ${{ github.repository}}\${{ github.workflow }}\project.json -destination_folder ${{ github.repository}}\${{ github.workflow }}\GitCheckinTestCode\package
+          run: echo ${{ github.repository}}\GitCheckinTestCode\scripts\UiPathPack.ps1 ${{ github.repository}}\GitCheckinTestCode\project.json -destination_folder ${{ github.repository}}\GitCheckinTestCode\package
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
