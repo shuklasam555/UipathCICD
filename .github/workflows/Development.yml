@@ -50,7 +50,7 @@
           uses: actions/checkout@v2
         - name: Build Nuget Package
           shell: pwsh
-          run: UipathCICD\scripts\UiPathPack.ps1 UipathCICD\project.json -destination_folder UipathCICD\package
+          run: echo ${{ github.workspace }}\scripts\UiPathPack.ps1 ${{ github.workspace }}\project.json -destination_folder ${{ github.workspace }}\package
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
