@@ -50,7 +50,7 @@
           uses: actions/checkout@v2
         - name: Build Nuget Package
           shell: pwsh
-          run: echo ${{ github.repository}}/${{ github.workflow }}\scripts\UiPathPack.ps1 ${{ github.repository}}/${{ github.workflow }}\project.json -destination_folder ${{ github.repository}}/${{ github.workflow }}\GitCheckinTestCode\package
+          run: ${{ github.repository}}\${{ github.workflow }}\scripts\UiPathPack.ps1 ${{ github.repository}}\${{ github.workflow }}\project.json -destination_folder ${{ github.repository}}\${{ github.workflow }}\GitCheckinTestCode\package
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
