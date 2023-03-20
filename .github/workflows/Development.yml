@@ -37,7 +37,6 @@
           run: |
             echo "Cleaning up previous run"
             echo "uipath.github.action"
-            rm -rf "${{ github.workspace }}"
 
     build-uipath-nuget-package:
       # You should be able to run on windows 2019 or windows latest
