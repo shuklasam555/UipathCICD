@@ -48,7 +48,7 @@
           uses: actions/checkout@v2
         - name: Build Nuget Package
           shell: pwsh
-          run: echo ${{ github.repository }}\GitCheckinTestCode\scripts\UiPathPack.ps1 ${{ github.repository }}\GitCheckinTestCode\project.json -destination_folder ${{ github.repository }}\GitCheckinTestCode\package
+          run: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\scripts\UiPathPack.ps1 C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\project.json -destination_folder C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\package
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
