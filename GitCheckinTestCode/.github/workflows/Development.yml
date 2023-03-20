@@ -38,7 +38,6 @@
           run: |
             echo "Cleaning up previous run"
             echo "uipath.github.action"
-            echo "github.action_path"
             rm -rf "${{ github.workspace }}"
 
     build-uipath-nuget-package:
