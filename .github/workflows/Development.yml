@@ -47,8 +47,8 @@
           # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
           uses: actions/checkout@v2
         - name: Build Nuget Package
-          shell: pwsh
           run: UipathCICD\GitCheckinTestCode\scripts\UiPathPack.ps1 UipathCICD\GitCheckinTestCode\project.json -destination_folder UipathCICD\GitCheckinTestCode\package
+          shell: pwsh
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
