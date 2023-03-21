@@ -66,5 +66,5 @@
             name: Artifacts
         - name: Publish Nuget Package to DEV
           shell: pwsh
-          run: ${{ github.workspace }}\GitCheckinTestCode\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\GitCheckinTestCode\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey ${{env.ORCH_USER_KEY}} -account_name ${{env.ORCH_ACC_NAME}}
+          run: ${{ github.workspace }}\GitCheckinTestCode\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\GitCheckinTestCode\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -orchestrator_user sumit.shukla@rxo.com -orchestrator_pass Developer@1234 -folder_organization_unit Test
 
