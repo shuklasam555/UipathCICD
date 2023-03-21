@@ -53,12 +53,12 @@
           uses: actions/upload-artifact@v2
           with:
             name: Artifacts
-            path: |
+            path: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package
             package: /*.nupkg
             scripts: UiPathPack.ps1
     publish-uipath-nuget-package:
       needs: build-uipath-nuget-package
-      runs-on: windows-latest
+      runs-on: self-hosted
       steps:
         - name: Download UiPath Artifacts
           uses: actions/download-artifact@v2
