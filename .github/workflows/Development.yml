@@ -9,11 +9,11 @@
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
     PROJECT_FOLDER: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode
-    ORCH_URL: https://cloud.uipath.com/rxomafmgxr
-    ORCH_TENANT: NonProd
+    ORCH_URL: https://cloud.uipath.com/sumitoaejirs
+    ORCH_TENANT: DefaultTenant
     ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
-    ORCH_USER_KEY: FA9MhuokrWv8wtDyC1YFLgiTCuoNXU84lNkoUS2poc1da
-    ORCH_ACC_NAME: sumit.shukla@rxo.com
+    ORCH_USER_KEY: GPSG0YjQPmFQp5Egf2NmDJQN0Lp9ANTtegIxCF6iS9Cp9
+    ORCH_ACC_NAME: shuklasam555@gmail.com
 
   jobs:
     print-details:
@@ -66,5 +66,5 @@
             name: Artifacts
         - name: Publish Nuget Package to DEV
           shell: pwsh
-          run: ${{ github.workspace }}\GitCheckinTestCode\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\GitCheckinTestCode\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -orchestrator_user sumit.shukla@rxo.com -orchestrator_pass Developer@1234 -folder_organization_unit Test
+          run: ${{ github.workspace }}\GitCheckinTestCode\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\GitCheckinTestCode\package ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey RE7gRGFP7jfl7aCUR7ne-iJQwo7zKg1XLZyn3nSCC2M9Y -account_name sumit.shukla@rxo.com -folder_organization_unit Test
 
