@@ -9,10 +9,10 @@
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
     PROJECT_FOLDER: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode
-    ORCH_URL: https://cloud.uipath.com/rxomafmgxr/NonProd
+    ORCH_URL: https://cloud.uipath.com/rxomafmgxr
     ORCH_TENANT: NonProd
     ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
-    ORCH_USER_KEY: -6wprkZZeBtKHlNw3uQib9UHk4VgeDPxvOIeXq5MW5cGP
+    ORCH_USER_KEY: FA9MhuokrWv8wtDyC1YFLgiTCuoNXU84lNkoUS2poc1da
     ORCH_ACC_NAME: sumit.shukla@rxo.com
 
   jobs:
