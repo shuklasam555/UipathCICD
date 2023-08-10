@@ -35,7 +35,7 @@
       steps:
         - name: Runner workspace path
           run: |
-            echo "Cleaning up previous runs"
+            echo "Cleaning up previous runs changing the file location"
             echo "uipath.github.action"
 
     build-uipath-nuget-package:
