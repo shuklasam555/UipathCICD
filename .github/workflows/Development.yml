@@ -8,7 +8,7 @@
   env:
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
-    PROJECT_FOLDER: C:\SelfHostedAgent\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode
+    PROJECT_FOLDER: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode
     ORCH_URL: https://cloud.uipath.com/sumitoaejirs
     ORCH_TENANT: DefaultTenant
     ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
@@ -47,13 +47,13 @@
           # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
           uses: actions/checkout@v2
         - name: Build Nuget Package
-          run: C:\SelfHostedAgent\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\scripts\UiPathPack.ps1 C:\SelfHostedAgent\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\project.json -destination_folder C:\SelfHostedAgent\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package
+          run: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\scripts\UiPathPack.ps1 C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\project.json -destination_folder C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package
           shell: pwsh
         - name: Upload UiPath Artifacts
           uses: actions/upload-artifact@v2
           with:
             name: Artifacts
-            path: C:\SelfHostedAgent\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package
+            path: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package
             package: /*.nupkg
             scripts: UiPathPack.ps1
     publish-uipath-nuget-package:
