@@ -9,7 +9,7 @@
     # Replace with your Orchestrator Values
     PROJECT_NAME: GitCheckinTestCode
     PROJECT_FOLDER: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode
-    ORCH_URL: https://cloud.uipath.com/rxomafmgxr/NonProd
+    ORCH_URL: https://cloud.uipath.com/rxomafmgxr
     ORCH_TENANT: NonProd
     ORCH_CLIENT_ID: 8DEv1AMNXczW3y4U15LL3jYf62jK93n5
     ORCH_USER_KEY: eUwo62eJitOjIabMjjO_Nw3FgHNDgCad7R9qNLMepsbRj
@@ -66,5 +66,5 @@
             name: Artifacts
         - name: Publish Nuget Package to DEV
           shell: pwsh
-          run: ${{ github.workspace }}\GitCheckinTestCode\scripts\UiPathDeploy.ps1 ${{ github.workspace }}\GitCheckinTestCode\package\gitcheckintestcode.1.0.0.nupkg ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey eUwo62eJitOjIabMjjO_Nw3FgHNDgCad7R9qNLMepsbRj -account_name sumit.shukla@rxo.com
+          run: C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\scripts\UiPathDeploy.ps1 C:\Users\sshukla001\actions-runner\_work\UipathCICD\UipathCICD\GitCheckinTestCode\package\gitcheckintestcode.1.0.0.nupkg ${{env.ORCH_URL}} ${{env.ORCH_TENANT}} -UserKey eUwo62eJitOjIabMjjO_Nw3FgHNDgCad7R9qNLMepsbRj -account_name sumit.shukla@rxo.com
 
